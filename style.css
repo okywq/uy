@@ -23,8 +23,8 @@
 		background-color: #ecf0f3;
 		}
 	.container {
-		width: 300px;
-		height: 500px;
+		width: 90%;
+		height: 90%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -37,11 +37,12 @@
 	}
 	.hander {
 		width: 100%;
-		height: 30px;
+		height: 60px;
 		line-height:30px;
 		z-index:1;
 		background-color: #ecf0f3;
 		border-radius: 15px;
+		text-align:center;
 		box-shadow: 5px 5px 10px #b1b4b6,
 			-5px -5px 10px #ffffff;
 	}
