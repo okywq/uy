@@ -1,24 +1,161 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-	    <link rel="shortcut icon" href="favicon.ico">
-		<title>个人引导页-长游分享</title>   
+	    <!--<link rel="shortcut icon" href="favicon.ico">-->
+		<title>个人引导页-长游分享</title>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<meta name="KEYWords" contect="长游分享,个人主页,个人引导页">
-		<meta name="DEscription" contect="长游分享,个人主页,个人引导页">
-		<meta name="Author" contect="个人引导页">
-		<meta name="Robots" contect= "all">
-		<link rel="stylesheet"  href="style.css">
+		<!--<meta name="KEYWords" contect="长游分享,个人主页,个人引导页">-->
+		<!--<meta name="DEscription" contect="长游分享,个人主页,个人引导页">-->
+		<!--<meta name="Author" contect="个人引导页">-->
+		<!--<meta name="Robots" contect= "all">-->
+		<!--<link rel="stylesheet"  href="style.css">-->
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				color:#000000;
+			}
+			body {
+				background-color: #ecf0f3;
+			}
+			.container {
+				width: 90%;
+				height: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index:1;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			.content {
+				//width: 100%;
+				//height: 90%;
+				margin-top:20px;
+				background-color: #ecf0f3;
+				border-radius: 15px;
+				box-shadow: 5px 5px 10px #b1b4b6,-5px -5px 10px #ffffff;
+			}
+			.content section{
+				position: absolute;
+				opacity: 0;
+				transition: .4s ease-out;
+			}
+			.content section.active-section{
+				opacity: 1;
+			}
+			.main {
+				width: 100%;
+				height: 100%;
+				z-index:1;
+				display:inline-block;
+				position:relative;
+				overflow: hidden;
+				border-radius: 10px;
+			}
+			.bgt {
+				background-repeat: no-repeat;
+				background-size: cover;
+				width:100%;
+			}
+			.ato {
+				line-height:30px;
+				font-size:12px;
+				font-weight: bold;
+				position: absolute;
+				top: 5%;
+				left: 5%;
+				padding-top:65px;
+				//color:red;
+			}
+			.att {
+				line-height:30px;
+				font-size:18px;
+				font-weight:bold;
+				position: absolute;
+				top: 5%;
+				left: 5%;
+				padding-top:33px;
+				padding-left:60px;
+			}
+			.ats {
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				top: 5%;
+				left: 5%;
+				border-radius: 50%;
+			}
+			.box{
+				margin-top:10px;
+				border-radius: 15px;
+				padding:10px;
+				margin-bottom:10px;
+				background: #ecf0f3;
+				box-shadow: inset 5px 5px 10px #b1b4b6,
+					inset -5px -5px 10px #ffffff;
+			}
+			#boxs{
+				margin:0px;
+				height: 100%;
+				overflow-x: hidden;
+				overflow-y: scroll;
+			}
+			#boxs::-webkit-scrollbar{
+				width: 5px;
+				height: 5px;
+			}
+			#boxs::-webkit-scrollbar-track{
+				border-radius: 12px;
+				background-color: #eee;
+			}
+			#boxs::-webkit-scrollbar-thumb{
+				border-radius: 12px;
+				background-color: #aaa;
+			}
+			.web{
+				width:90%;
+				height:20px;
+				text-align:center;
+				background: #fafafa 
+				repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);
+				box-shadow:0 2px 5px rgba(0,0,0,.15);
+				margin:0 auto;
+				margin-top:0px;
+				margin-bottom:10px;
+				padding:10px;
+				border-radius:5px;
+				font-size:15px;
+				font-weight: bold;
+			}
+			.tips{
+				width:90%;
+				border-bottom-right-radius: 2px;
+				border-left: 4px solid #2ECC71;
+				border-top-right-radius: 2px;
+				margin: 0 auto;
+				//text-align:center;
+				padding: 3px;
+				position: relative;
+				background-color: #f8f8f8;
+				font-size:12px;
+			}
+			.A {
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container"><!-- 主体开始 -->
-
 			<div class="content"><!-- 内容开始 -->
 				<section class="home-me-section active-section"><!-- 首页开始 -->
 					<div class="main"><!-- 站点内容开始 -->
 						<div onclick="setshare()">
-							<img src="img/bgo.jpg" class="bgt" />
-							<img src="img/avatar.png" class="ats" />
+							<img src="bgo.jpg" class="bgt" />
+							<img src="avatar.png" class="ats" />
 							<div class="att">OK原味圈APP</div>
 							<div class="ato">
 								<a>APP永久官网发布页：okywq.github.io</a>
@@ -26,39 +163,43 @@
 								<a>请截图收藏本页或保存下方二维码！防止失联！</a>
 							</div>
 						</div>
-
-
 						<div class="box">
+							<a href="https://3g.lenovomm.com/w3g/yydownload/com.okyuanwei.app/17071" target="_blank" class="A">
 							<div id="boxs">
 								<div class="track-list"><!-- 时间轴开始 -->
 									<ul>
-										<a href="https://3g.lenovomm.com/w3g/yydownload/com.okyuanwei.app/17071" target="_blank"><div class="web">安卓免费下载</div></a><!-- 站点二 -->
+										<div class="web">安卓免费下载</div>
 										<div class="tips">【安卓版本】永久稳定/建议优先使用</div>
 										<div class="tips">【提示】安卓下载后请在下载管理、文件管理或者通知栏里面找APK安装包！安装包解析失败请重新下载！</div>
 									</ul>
 								</div><!-- 时间轴结束 -->
 							</div>
+							</a>
 						</div>
 						<div class="box">
+							<a href="https://app.xfenfa.cn/ZoO3" target="_blank" class="A">
 							<div id="boxs">
 								<div class="track-list"><!-- 时间轴开始 -->
 									<ul>
-										<a href="https://app.xfenfa.cn/ZoO3" target="_blank"><div class="web">苹果免费下载（企业签）</div></a><!-- 站点二 -->
+										<div class="web">苹果免费下载（企业签）</div>
 										<div class="tips">【企业签】优点：免费下载/缺点：易掉签，需重装/推荐苹果新用户安装</div>
 										<div class="tips">【提示】苹果下载后需要信任应用，请前往“设置”、“通用”、“VPN与设备管理”、“信任应用”</div>
 									</ul>
 								</div><!-- 时间轴结束 -->
 							</div>
+							</a>
 						</div>
 						<div class="box">
+							<a href="http://240pay.com/fpjuk5" target="_blank" class="A">
 							<div id="boxs">
 								<div class="track-list"><!-- 时间轴开始 -->
 									<ul>
-										<a href="http://240pay.com/fpjuk5" target="_blank"><div class="web">苹果付费安装（超级签）</div></a><!-- 站点二 -->
+										<div class="web">苹果付费安装（超级签）</div>
 										<div class="tips">【超级签】优点：稳定不易掉签，专属客服对接安装/推荐苹果老用户安装</div>
 									</ul>
 								</div><!-- 时间轴结束 -->
 							</div>
+							</a>
 						</div>
 						<div class="box">
 							<div id="boxs">
@@ -69,17 +210,11 @@
 								</div><!-- 时间轴结束 -->
 							</div>
 						</div>
-						<!--<div style="color:#aaa;text-align:center;font-size:12px">
-							注: 上下滑动查看
-						</div>-->
 					</div><!-- 站点内容结束 -->
 				</section><!-- 首页结束 -->
 			</div><!-- 内容结束 -->
 		</div><!-- 主体结束 -->
 
-		<script src="js/index.js"></script><!-- 核心插件 -->
-		<script src="js/all.js"></script><!-- 图标库 -->
-		<script src="js/Mouse.js"></script><!-- 点击烟花特效 -->
 		<script>
 		    function setshare(){
 			let txt = "https://okywq.github.io";
