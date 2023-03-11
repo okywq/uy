@@ -60,9 +60,11 @@
 .desktop .brand .app-name{
     font-size: 3.3vh;
     margin-bottom: 1vh;
+color:#000;
 }
 .desktop .brand .app-slogn{
     font-size: 2.8vh;
+color:#000;
 }
 .desktop .subject{
     margin-top: 3vh;
@@ -164,6 +166,27 @@
     margin-bottom: -18%;
 }
 /* ---------- section4 --------- */
+.desktop .section.section1 .app img.main-img{
+    height: 75vh;
+    margin-bottom: 0;
+}
+.desktop .section.section1.active .app img.main-img {
+    animation: 0.4s scale 0.3s both;
+}
+.desktop .section.section2 .app img.main-img{
+    height: 75vh;
+    margin-bottom: 0;
+}
+.desktop .section.section2.active .app img.main-img {
+    animation: 0.4s scale 0.3s both;
+}
+.desktop .section.section3 .app img.main-img{
+    height: 75vh;
+    margin-bottom: 0;
+}
+.desktop .section.section3.active .app img.main-img {
+    animation: 0.4s scale 0.3s both;
+}
 .desktop .section.section4 .app img.main-img{
     height: 75vh;
     margin-bottom: 0;
@@ -171,17 +194,33 @@
 .desktop .section.section4.active .app img.main-img {
     animation: 0.4s scale 0.3s both;
 }
+.desktop .section.section5 .app img.main-img{
+    height: 75vh;
+    margin-bottom: 0;
+}
+.desktop .section.section5.active .app img.main-img {
+    animation: 0.4s scale 0.3s both;
+}
+
 .desktop .section1{
-    background: url("../images/0423979aad4d9a1d.jpg") center/cover;
+    //background: url("../images/0423979aad4d9a1d.jpg") center/cover;
+background-color: #fb729e;
 }
 .desktop .section2{
-    background: url("../images/e9b495308bca3837.jpg") center/cover;
+    //background: url("../images/e9b495308bca3837.jpg") center/cover;
+background-color: #fb729e;
 }
 .desktop .section3{
-    background: url("../images/ef56ca16fcc55572.jpg") center/cover;
+    //background: url("../images/ef56ca16fcc55572.jpg") center/cover;
+background-color: #fb729e;
 }
 .desktop .section4{
-    background: url("../images/ca5166a68deea24e.jpg") center/cover;
+    //background: url("../images/ca5166a68deea24e.jpg") center/cover;
+background-color: #fb729e;
+}
+.desktop .section5{
+    //background: url("../images/ca5166a68deea24e.jpg") center/cover;
+background-color: #fb729e;
 }
 
 
